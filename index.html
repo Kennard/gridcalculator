@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Grid Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
+ 	<link href="css/grid.css" rel="stylesheet" media="screen">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/selectivizr-min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	
+<nav>
+	<div class="navi cf">
+		<div class="container">
+			<a href="index.html" title="home"><span class="home icon-home pull"></span></a>
+			<span id="toggleMenu" class="icon-list push"></span>
+			<div class="menu">
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#getstarted">Get Started</a></li>
+					<li><a href="#samplegrid">Sample Grids</a></li>
+					<li><a href="#share">Share</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<header>
+	<div class="hero cf">
+		<div class="container">
+			<h1>Grid Calculator</h1>
+			<span><img src="img/hero-grid-calculator.png" alt="grid-calculator"></span>
+			<h4>The grid caluclator is a quick an easy tool to use when you're building fluid layouts. Just enter your layout width, number of columns, and your gutter and download the css!</h4>
+		</div>
+	</div>
+</header>
+<section>
+	<div class="intro cf">
+		<div class="container">
+			<h2 id="about">Speed up your workflow with the Grid Calculator</h2>	
+			<div class="columns_4 span-1">
+				<img src="img/fluid-pc.png" alt="css fluid grids">
+				<h4>FLUID GRIDS</h4>
+				<p>Make grids from 2 to 14 columns and gutters from 8 to 40 pixels and the grid calculator churns out the numbers.</p>
+			</div>
+			<div class="columns_4 span-5">
+				<img src="img/responsive-pc.png" alt="css responsive grids">
+				<h4>RESPONSIVE</h4>
+				<p>This grid calculator was built to help front end developers who want to quickly deploy fluid percentage based layouts.</p>
+			</div>
+			<div class="columns_4 span-9">
+				<img src="img/download-css.png" alt="download responsive grid css">
+				<h4>DOWNLOAD CSS</h4>
+				<p>Reduce the time it takes to develop your fluid layouts with css you can donwload and add to your css project file.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section >
+	<div class="gridmaker cf">
+		<div class="container">
+			<h2 id="getstarted">Create your own quick grids to plug into your design projects.</h2>				
+
+			<form method="post" action="index.php" class="grid_form">
+				<p>
+					<span id="width_message"></span><br>
+					<label for="pagewidth" id="pagewidth">Width:</label><br>
+					<input type"text" id="width" name="pagewidth" value="px" class="style-field"> 
+				</p>
+				<p>
+					<span id="column_message"></span><br>
+					<label for="columns" id="columns">Columns:</label><br>
+					<input type"text" id="columns" name="columns" value="" class="style-field">
+				</p>
+				<p >	
+					<span id="gutter_message"></span><br>
+					<label for="gutters" id="gutters">Gutters:</label><br>
+					<input type"text" id="gutters" name="gutters" value="" class="style-field">
+				</p>
+				<p class="button-block">	
+					<input type="submit" value="submit"  id="calc">
+				</p>
+			</form>
+
+			<div class="output-css"></div>
+			
+		</div>		
+	</div>
+</section>
+<section>
+	<div class="setup">
+		<div class="container">
+			<article>
+				<h3>Basic Setup</h3>
+				<p>Include the <span class="bubble">border-box</span> rule at the top of your css file to target all the elements. Border-box is a great way of controlling margins and padding within containers and divs. If you're interested in learning more about why this piece of code is usefull check out <a href="http://www.paulirish.com/2012/box-sizing-border-box-ftw/" target="_new" title="CSS3 Border-box">Paul Irish's</a> article explaing the benefits of applying this rule to your css.</p>
+				<p><script src="https://gist.github.com/Kennard/11128325.js"></script></p>
+				<p>To seperate your column rows insert your grid columns inside a containing row. The class name is really up to you. Use the cleafix hack developed by <a href="http://nicolasgallagher.com/micro-clearfix-hack/" target="_new" title="cleafix hack">Nicolas Gallagher</a> when you add additional rows to clear collapsing floats. The clearfix is an effective way to keep your floating divs in the normal flow of the page layout.</p>
+				<p><script src="https://gist.github.com/Kennard/11020749.js"></script></p>
+				<p>In this example, a column name begins with <span class="bubble">.col_</span> followed by the column span number. Your column names can use other naming conventions like <span class="bubble">.span_col_1</span> if you prefer.</p>			
+				<p><script src="https://gist.github.com/Kennard/11020416.js"></script></p>			
+			</article>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="setup">
+		<div class="container">
+			<article>
+				<h3>Grid Essentials</h3>
+				<p>Grid columns float left with right margins set to <span class="bubble">margin-right:-100%;</span> for container-relative floats. For each consecutive grid column the margins are set from left edge of the container using the <span class="bubble">.pad</span> class.</p>
+				<p><script src="https://gist.github.com/Kennard/11020298.js"></script></p>
+				<p><script src="https://gist.github.com/Kennard/11021258.js"></script></p>
+			</article>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="setup">
+		<div class="container">
+			<article>
+				<h3>Media Queries</h3>
+				<p>Apply media queries at certain breakpoints for a fluid responsive layout. Go from 12 columns to 6 to 1. Here we reset our grids to 100% for all columns for various device breakpoints</p>
+				<p><script src="https://gist.github.com/Kennard/11022113.js"></script></p>
+			</article>
+		</div>
+	</div>
+</section>
+<section>	
+	<div class="samples cf">
+		<div class="container">
+			<div class="columns_4 span-1">
+				<h3 id="samplegrid">Full 12 Column Fluid Responsive Grid Columns</h4>
+				<a href="/gridcalculator/examples/fullgrid.html" id="fulldgrid" title="Sample 12 Column grid"><img src="img/sample-12-grid.png" alt="Sample 12 Column Grid"></a>
+			</div>
+			<div class="columns_4 span-5">
+				<h3 id="samplegrid">Nested Fluid Responsive Grid Columns</h4>
+				<a href="/gridcalculator/examples/nested.html" id="nested" title="Sample Nested Column grid"><img src="img/sample-6-grid.png" alt="Sample Nested Column Grid"></a>
+			</div>
+			<div class="columns_4 span-9">
+				<h3 id="samplegrid">Source Order Fluid Responsive Grid Columns</h4>
+				<a href="/gridcalculator/examples/source-order.html" id="nested" title="Source Order Column grid"><img src="img/reorder-grid.png" alt="Source Order Column Grid"></a>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="share">
+		<div class="container">
+			<h3 id="share">Spread Joy!</h3>
+				<a href="http://twitter.com/intent/tweet?text=Check out this %23grid calculator tool to help you build fluid responsive layouts %23rwd&url=http://http://kennard.github.io/gridcalculator" title="Share this on Twitter" target="_new"><span class="twitter-button">Tweet This!</span></a>
+				<a href="" title="Fork it on Git Hub"><span class="fork-button">Fork It!</span></a>
+		</div>
+	</div>
+</section>
+
+<a href="#" class="back-to-top"><span class="icon-arrow-up"></span></a>
+<footer>
+    <div class="foot cf">
+        <div class="container">         
+            <div class="social-group">
+                <p>Grid Calculator developed by <a href="http://www.twitter.com/knardm" target="_new">Kennard McGill</a></p>
+            </div>
+            <div class="sig">
+                <small>Copyright © 2014, All Rights Reserved.</small>
+            </div>
+        </div>
+    </div>      
+</footer>
+
+ <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+ <script src="js/togglemenu.js"></script>
+ <script src="js/gridcalculator.js"></script>
+ <script src="js/backtotop.js"></script>    
+
+</body>
+</html>

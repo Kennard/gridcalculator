@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Grid Calculator - Nested Columns Fluid Grid Layout </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
+ 	<link href="../css/grid.css" rel="stylesheet" media="screen">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/selectivizr-min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	
+<nav>
+	<div class="navi cf">
+		<div class="container">
+			<a href="/gridcalculator/index.html" title="home"><span class="home icon-home pull"></span></a>
+			<span id="toggleMenu" class="icon-list push"></span>
+
+			<div class="menu">
+				<ul>
+					<li><a href="/gridcalculator/index.html#about">About</a></li>
+					<li><a href="/gridcalculator/index.html#getstarted">Get Started</a></li>
+					<li><a href="/gridcalculator/index.html#samplegrid">Sample Grids</a></li>
+					<li><a href="/gridcalculator/index.html#share">Share</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</nav>
+
+	<div class="container">
+
+		<div class="sample">
+			<div class="sample-hero">
+				<h2 id="nested">Nested Columns Fluid Grid Layout</h2>
+				<p>Nested grids are easy! Just remember that the column you are nesting will be the parent containers. 
+					Because we are using percentage width the nested grids should be 100% of it container.</p>
+				</div>
+				<div class="column_row">
+					<div class="columns_3 span-1">3/12</div>
+					<div class="columns_3 span-4">3/12</div>
+					<div class="columns_3 span-7">3/12</div>
+					<div class="columns_3 span-10">3/12</div>
+				</div>	
+				<div class="column_row">
+					<div class="columns_9 span-1">9/12
+						<div class="nest">
+							<div class="columns_2 span-1">2/12</div>
+							<div class="columns_10 span-3">10/12</div>
+						</div>	
+					</div>
+					<div class="columns_3 span-10">3/12
+						<div class="nest">
+							<div class="columns_12 span-1">12/12</div>
+						</div>	
+					</div>
+				</div>	
+				<div class="column_row">
+					<div class="columns_2 span-1">2/12
+						<div class="nest">
+							<div class="columns_12 span-1">12/12</div>
+						</div>	
+					</div>
+					<div class="columns_5 span-3">5/12
+						<div class="nest">
+							<div class="columns_4 span-1">4/12</div>
+							<div class="columns_4 span-5">4/12</div>
+							<div class="columns_4 span-9">4/12</div>
+						</div>	
+					</div>
+					<div class="columns_5 span-8">5/12
+						<div class="nest">
+							<div class="columns_4 span-1">4/12</div>
+							<div class="columns_4 span-5">4/12</div>
+							<div class="columns_4 span-9">4/12</div>
+						</div>	
+					</div>
+				</div>		
+				<div class="column_row">
+					<div class="columns_6 span-1">6/12
+						<div class="nest">
+							<div class="columns_3 span-1">3/12</div>
+							<div class="columns_3 span-4">3/12</div>
+							<div class="columns_6 span-7">6/12</div>
+						</div>
+					</div>
+					<div class="columns_6 span-7">6/12
+						<div class="nest">
+							<div class="columns_6 span-1">6/12</div>
+							<div class="columns_6 span-7">6/12</div>
+						</div>
+					</div>
+				</div>	
+				<div class="column_row">
+					<div class="columns_5 span-1">5/12
+						<div class="nest">
+							<div class="columns_3 span-1">3/12</div>
+							<div class="columns_3 span-4">3/12</div>
+							<div class="columns_3 span-7">3/12</div>
+							<div class="columns_3 span-10">3/12</div>
+						</div>	
+					</div>
+					<div class="columns_7 span-6">7/12
+						<div class="nest">
+							<div class="columns_4 span-1">4/12</div>
+							<div class="columns_8 span-5">8/12</div>
+						</div>		
+					</div>
+				</div>	
+
+				<div class="column_row">
+					<div class="columns_12 fill">12/12
+						<div class="nest">
+							<div class="columns_12 span-1">12/12</div>
+						</div>	
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+<footer>
+    <div class="foot cf">
+        <div class="container">         
+            <div class="social-group">
+                <p>Grid Calculator developed by <a href="http://www.twitter.com/knardm" target="_new">Kennard McGill</a></p>
+            </div>
+            <div class="sig">
+                <small>Copyright © 2014, All Rights Reserved.</small>
+            </div>
+        </div>
+    </div>      
+</footer>
+ <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+ <script src="../js/togglemenu.js"></script>
+ <script src="../js/generateFile.js"></script>
+ <script src="../js/gridcalculator.js"></script>
+ <script src="../js/backtotop.js"></script>   
+ 
+</body>
+</html>
