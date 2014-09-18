@@ -309,8 +309,8 @@ h2, h3, h4 {
     padding: 40px 0 20px 0;
     font-size: 3.5em; }
   .hero h4 {
-    padding: 20px 60px 80px 60px;
-    font-size: 1.75em; }
+    padding: 20px 40px 80px 40px;
+    font-size: 1.55em; }
   @media only screen and (max-width: 600px) {
     .hero h1 {
       font-size: 3em; }
