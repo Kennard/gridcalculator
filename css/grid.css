@@ -309,8 +309,8 @@ h2, h3, h4 {
     padding: 40px 0 20px 0;
     font-size: 3.5em; }
   .hero h4 {
-    padding: 20px 40px 80px 40px;
-    font-size: 1.55em; }
+    padding: 20px 60px 80px 60px;
+    font-size: 1.75em; }
   @media only screen and (max-width: 600px) {
     .hero h1 {
       font-size: 3em; }
@@ -475,7 +475,7 @@ pre {
       .setup p {
         padding: 10px 20px; } }
   .setup a {
-    color: #bca350; }
+    color: #5069bc; }
   .setup h3 {
     font-size: 2em;
     padding: 10px 0 20px 0; }
@@ -598,14 +598,14 @@ pre {
 
 .social-group a {
   text-decoration: none;
-  color: #b3b3b3; }
+  color: #5069bc; }
 
 .social-group a:hover {
   color: #16aad1; }
 
 .social-group p {
   font-size: .80em;
-  padding: 15px 0px; }
+  padding: 5px 0px; }
 
 .back-to-top {
   position: fixed;
