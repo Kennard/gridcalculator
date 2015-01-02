@@ -1,0 +1,41 @@
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../font/icomoon.eot?q8hgw');
+    src:url('../font/icomoon.eot?#iefixq8hgw') format('embedded-opentype'),
+        url('../font/icomoon.woff?q8hgw') format('woff'),
+        url('../font/icomoon.ttf?q8hgw') format('truetype'),
+        url('../font/icomoon.svg?q8hgw#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-size: 1em; 
+	line-height: 1.65em;  
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+	color: #424242;
+}
+
+.container{
+	width:100%;
+	max-width:67.5em; /* 1080px */
+	margin: 0px auto;
+	padding: 0 1em;
+}
+
+.sample{
+    width:100%;
+    max-width:60em; /* 960px */
+    margin: 20px auto 60px;
+    padding: 0 .5em;
+}
+
+
+h2, h3, h4 {
+	font-weight: $font-light;
+}
+
+
+
