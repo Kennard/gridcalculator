@@ -343,7 +343,7 @@ h2, h3, h4 {
 
 .gridmaker {
   text-align: center;
-  background: #e7eced;
+  background: #e9eeef;
   padding: 80px 0 70px 0; }
   .gridmaker h2 {
     font-size: 2.5em;
@@ -546,7 +546,7 @@ pre {
 
 /*   Footer Rules */
 .foot {
-  background: #e7eced;
+  background: #e9eeef;
   padding: 30px 0; }
 
 .sig {
@@ -646,7 +646,7 @@ pre {
 .column_row {
   padding: 6px;
   color: #fff;
-  background: #e7eced;
+  background: #e9eeef;
   border-radius: 2px;
   text-align: center;
   font-size: .875em;
